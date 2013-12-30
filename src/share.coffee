@@ -32,7 +32,7 @@ $.fn.share = (opts) ->
   config.gplus_url    = set_opt('gplus', 'url')
 
   # private
-  config.selector = ".#{$(@).attr('class')}"
+  config.selector = $(@).selector
 
   # correct common errors
   config.twitter_text = encodeURIComponent(config.twitter_text)
